@@ -475,6 +475,7 @@ footer .parrafo-pie{
 
 }
 
+
 @media screen and (max-width:785px) {
 
     #grid-container-estudio  .grid-item-estudio:nth-child(3){ 
@@ -514,6 +515,10 @@ footer .parrafo-pie{
     }
     #grid-container-estudio  .grid-item-estudio:nth-child(4){
         height: 400px;
+    }
+
+    #grid-container, #grid-container-estudio, .home-container, .home-container-bis, #grid-container-novedades, #grid-container-proyecto {
+        padding: 20px;
     }
 
     .home-container .home-item:nth-child(1), .home-container-bis .home-item-bis:nth-child(1) {
