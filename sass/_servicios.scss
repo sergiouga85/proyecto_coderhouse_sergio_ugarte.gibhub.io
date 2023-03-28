@@ -1,0 +1,49 @@
+
+/*VARIABLES*/
+
+$marron-bg: #6d665c;
+$blanco:#ffffff;
+
+/* ESTILOS SERVICIOS*/
+
+#main-servicios{
+    background-color: $marron-bg;
+    padding-bottom: 20px;
+}
+
+
+#grid-container{
+    display:grid;
+    margin:40px auto;
+    padding-bottom: 30px;
+    max-width: 1200px;
+    gap:10px;
+    grid-template-columns: repeat(3, 1fr);
+    .grid-item {
+        .subtitulos {
+            background-color: gray;
+            color: #ffffff;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            gap: 5px;
+        }
+
+        p{
+            color: $blanco;
+            padding: 40px 0px;
+            font-size: 22px;     
+        }
+        img{
+            width:100%;
+            height:auto;    
+        }
+        &:nth-child(1){
+            grid-column:1/4;
+            grid-row: 1/2; 
+        }
+        &:nth-child(2),&:nth-child(9),&:nth-child(16){
+            grid-column:1/4;    
+        }        
+    }
+}

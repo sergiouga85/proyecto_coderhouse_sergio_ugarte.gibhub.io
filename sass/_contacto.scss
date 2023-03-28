@@ -1,0 +1,61 @@
+
+
+/*VARIABLES*/
+
+$marron-bg: #6d665c;
+$gris-claro-bg: gray;
+$blanco:#ffff;
+
+/* ESTILOS CONTACTO*/
+
+#main-contacto {
+    background-color: $marron-bg;
+    padding-bottom: 20px;
+}
+
+
+.container-formulario{
+    padding: 30px;
+    .formulario {
+        background-color: $gris-claro-bg;
+        opacity: .7;
+        width:450px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px; 
+        fieldset {
+            border:none;
+            legend {
+                color: $blanco;
+                text-align:left;
+                font-size:18px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .contenedor-campos {
+            .campo {
+                margin-bottom: 10px;
+                label{
+                    color: white;
+                    font-weight:bold;
+                    margin-bottom: 5px;
+                    display: block;
+                }
+                .input-text{
+                    width: 100%;    
+                }
+            }
+        }
+        .boton {
+            background-color: rgb(37, 35, 35) ;
+            color:#ffff;
+            font-size: 20px;
+            padding: 10px 30 px;
+            margin-top: 30px;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
