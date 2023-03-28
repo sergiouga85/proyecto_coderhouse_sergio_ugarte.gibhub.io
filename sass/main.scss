@@ -137,9 +137,16 @@ header {
         }
     }
 
-    .formulario{
-        width:95%;
+    .container-formulario{
+            width:80%;
+            
+            .formulario {
+                width:100%;
+                 
+            }
     }
+
+
 
     .footer-home{
         flex-direction: column;
@@ -182,6 +189,18 @@ header {
         }
     }    
 }
+
+@media screen and (max-width:991px){
+
+    .navbar{
+        .container-fluid {
+            justify-content: center;
+        }
+    } 
+
+    
+}
+
 
 @media screen and (max-width:1200px){
 
