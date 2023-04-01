@@ -1,10 +1,5 @@
 
-
-/*VARIABLES*/
-
-$marron-bg: #6d665c;
-$gris-claro-bg: gray;
-$blanco:#ffff;
+@import "_variables.scss";
 
 /* ESTILOS CONTACTO*/
 
@@ -37,7 +32,7 @@ $blanco:#ffff;
             .campo {
                 margin-bottom: 10px;
                 label{
-                    color: white;
+                    color: $blanco;
                     font-weight:bold;
                     margin-bottom: 5px;
                     display: block;
