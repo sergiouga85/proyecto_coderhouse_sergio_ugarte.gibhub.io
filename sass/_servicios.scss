@@ -9,22 +9,12 @@
 }
 
 
-#grid-container{
-    display:grid;
-    margin:40px auto;
-    padding-bottom: 30px;
-    max-width: $contenedor-grid;
-    gap:10px;
+.grid-container-servicios{
+    @extend .grid-container;
     grid-template-columns: repeat(3, 1fr);
-    .grid-item {
+    .grid-item-servicios {
         border: 5px solid $gris-claro-bg;
-        border-radius: 20px;
-        img{
-            width:100%;
-            height:auto; 
-            border-top-right-radius: 15px;
-            border-top-left-radius: 15px; 
-        }
+        border-radius: 10px;
 
         &:nth-child(1){
             grid-column:1/4;
