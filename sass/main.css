@@ -292,7 +292,7 @@ header .navbar-brand img {
   transition: 0.3s ease all;
 }
 header .navbar-brand img:hover {
-  transform: scale(1.25);
+  transform: scale(1.07);
 }
 header .navbar-collapse {
   display: flex;
