@@ -5,7 +5,7 @@
 
 .grid-container-servicios{
     @extend .grid-container;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     
     .grid-item-servicios {
         border: 5px solid $gris-claro-bg;
