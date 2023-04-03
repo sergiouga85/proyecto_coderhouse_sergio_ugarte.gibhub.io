@@ -2,11 +2,6 @@
 
 /* ESTILOS NOVEDADES*/
 
-#main-novedades{
-    background-color: $marron-bg;
-    padding-bottom: 20px;    
-}
-
 .grid-container-novedades{
    @extend .grid-container;
     grid-template-columns: 1fr 1fr;
@@ -14,9 +9,13 @@
     .grid-item-novedades{
         border: 5px solid $gris-claro-bg;
         border-radius: 10px;
-        
+        transition: 0.3s ease all;
+        &:hover{
+            transform: scale(1.05);
+        }
         &:nth-child(1){
             border:none;
+            transform: none;
         }
         &:nth-child(1),&:nth-child(2),&:nth-child(5),&:nth-child(6){
             grid-column:1/3;        

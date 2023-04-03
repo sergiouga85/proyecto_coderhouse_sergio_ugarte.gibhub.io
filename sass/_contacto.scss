@@ -3,11 +3,6 @@
 
 /* ESTILOS CONTACTO*/
 
-#main-contacto {
-    background-color: $marron-bg;
-    padding-bottom: 20px;
-}
-
 .grid-container-contacto{
     @extend .grid-container;
     grid-template-columns: 1fr 1fr;
