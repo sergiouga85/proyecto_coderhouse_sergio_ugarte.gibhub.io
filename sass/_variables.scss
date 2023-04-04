@@ -4,6 +4,7 @@
 
 
 $gris-marron-bg:rgb(56, 55, 55);
+$btn_contacto:rgb(37, 35, 35);
 $gris-claro-bg: gray;
 $marron-bg: #6d665c;
 $blanco: #ffff;
@@ -13,3 +14,30 @@ $desktop-screen:1250px;
 $mobile-screen:576px;
 $contenedor-grid:1200px;
 $fuente-tipografica: 'Abel', sans-serif;
+$size-parrafo:22px;
+
+$estilos_container:(
+    una_columna:1fr,
+    dos_columas: 1fr 1fr,
+    tres_columas: 1fr 1fr 1fr,
+    una_fila: 1fr,
+    fila_media:1fr 1/2fr,
+    tres_filas: 1fr 1fr 1/2fr 1/2fr,
+    tres_filas_media:1/2 1fr 1fr 1fr,
+    separacion:20px,
+    bordes: 5px solid $gris-claro-bg,
+    bordes_radiales:10px,
+    transiciones: 0.3s ease all,
+    transformaciones: scale(1.05),
+    ext_colum_media: 1/2,
+    ext_columnas_dos_cuartos: 2/4,
+    ext_colum_tercio: 1/3,
+    ext_colum_un_cuarto:1/4,
+    ext_columnas_dos_tercio: 2/3,
+    ext_columnas_tres_cuartos: 3/4,
+    ext_fila_un_medio:1/2,
+    ancho:100%,
+    altura:100%,
+);
+
+

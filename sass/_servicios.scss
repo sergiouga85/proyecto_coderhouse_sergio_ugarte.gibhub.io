@@ -5,38 +5,38 @@
 
 .grid-container-servicios{
     @extend .grid-container;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: map-get($estilos_container,tres_columas);
     
     .grid-item-servicios {
-        border: 5px solid $gris-claro-bg;
-        border-radius: 10px;
-        transition: 0.3s ease all;
+        border: map-get($estilos_container,bordes);
+        border-radius: map-get($estilos_container,bordes_radiales);
+        transition: map-get($estilos_container,transiciones);
         &:hover{
-            transform: scale(1.05);
+            transform: map-get($estilos_container,transformaciones);
         }
 
         &:nth-child(1){
-            grid-column:1/4;
-            grid-row: 1/2;
+            grid-column:map-get($estilos_container,ext_colum_un_cuarto);
+            grid-row: map-get($estilos_container,ext_colum_media);
             border:none;
             transform: none;    
         }
 
         &:nth-child(2),&:nth-child(9),&:nth-child(16){
-            grid-column:1/4;
+            grid-column:map-get($estilos_container,ext_colum_un_cuarto);
                
         } 
 
         &:nth-child(10){
-            grid-column:1/2;       
+            grid-column:map-get($estilos_container,ext_colum_media);       
         }
 
         &:nth-child(11){
-            grid-column:2/3;        
+            grid-column:map-get($estilos_container,ext_columnas_dos_tercio);        
         }
 
         &:nth-child(12){
-            grid-column:3/4;     
+            grid-column:map-get($estilos_container,ext_columnas_tres_cuartos);     
         }
 
     }

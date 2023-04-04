@@ -4,24 +4,24 @@
 
 .grid-container-novedades{
    @extend .grid-container;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: map-get($estilos_container, dos_columnas);
+    grid-template-rows: map-get($estilos_container, una_fila);
     .grid-item-novedades{
-        border: 5px solid $gris-claro-bg;
-        border-radius: 10px;
-        transition: 0.3s ease all;
+        border: map-get($estilos_container, bordes);
+        border-radius: map-get($estilos_container, bordes_radiales);
+        transition: map-get($estilos_container, transiciones);
         &:hover{
-            transform: scale(1.05);
+            transform: map-get($estilos_container, transformaciones);
         }
         &:nth-child(1){
             border:none;
             transform: none;
         }
         &:nth-child(1),&:nth-child(2),&:nth-child(5),&:nth-child(6){
-            grid-column:1/3;        
+            grid-column:map-get($estilos_container,ext_colum_tercio);        
         }
         &:nth-child(4){
-            grid-column:2/3;    
+            grid-column:map-get($estilos_container,ext_columnas_dos_tercio);    
         }
     }    
 }
