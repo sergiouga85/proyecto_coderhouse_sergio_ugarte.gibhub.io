@@ -112,7 +112,7 @@
 /*VARIABLES*/
 /* ESTILOS SERVICIOS*/
 .grid-container-servicios {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .grid-container-servicios .grid-item-servicios {
   border: 5px solid gray;
@@ -292,7 +292,7 @@ header .navbar-brand img {
   transition: 0.3s ease all;
 }
 header .navbar-brand img:hover {
-  transform: scale(1.07);
+  transform: scale(1);
 }
 header .navbar-collapse {
   display: flex;
