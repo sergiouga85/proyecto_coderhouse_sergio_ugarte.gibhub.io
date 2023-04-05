@@ -39,9 +39,9 @@ header {
             .navbar-brand img{
                 width:300px;
                 height:100px;
-                transition: 0.3s ease all;
+                transition: map-get($estilos_container,transiciones);
                 &:hover{
-                    transform: scale(1.0);
+                    transform: map-get($estilos_container,transformaciones_1);
                 }
             }
 
@@ -52,13 +52,13 @@ header {
 
                 a {
                     text-align: center;
-                    font-size: 20px;
+                    font-size: map-get($estilos_container,separacion);
                     padding:10px ;
                     text-decoration: none;
                     color: $blanco;
-                    transition: 0.3s ease all;
+                    transition: map-get($estilos_container,transiciones);
                     &:hover{
-                    transform: scale(1.25);
+                    transform: map-get($estilos_container,transformaciones_1);
                     color: $blanco;
                     }
                 }             
