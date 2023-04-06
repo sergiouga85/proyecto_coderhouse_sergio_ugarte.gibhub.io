@@ -202,6 +202,20 @@ $vista:mobile;
                 justify-content: center;
             }
         }
+
+        $sheading:(
+            h1: 40px,
+            h2: 30px,
+            h3: 18px, 
+        );
+
+        @each $title ,$size in $sheading {
+            #{$title} {
+            font-size: $size;
+            margin: 0px;
+            color: $blanco;
+            }
+        }
         
         .grid-container-home{
             grid-template-columns: map-get($estilos_container, columnas);
